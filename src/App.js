@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Quizzy/" element={<LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
         <Route path="/upload" element={
           <ProtectedRoute>
               <FileUploadValidator />
