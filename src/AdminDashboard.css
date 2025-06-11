@@ -1,0 +1,37 @@
+.dashboard-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.dashboard-table th, .dashboard-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.dashboard-table th {
+  background-color: #f0f0f0;
+}
+
+.dashboard-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
