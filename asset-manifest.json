@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Nithish-gitt/Quizzy/static/css/main.312352a2.css",
-    "main.js": "/Nithish-gitt/Quizzy/static/js/main.25f3754d.js",
-    "static/js/453.0886dcda.chunk.js": "/Nithish-gitt/Quizzy/static/js/453.0886dcda.chunk.js",
-    "index.html": "/Nithish-gitt/Quizzy/index.html",
-    "main.312352a2.css.map": "/Nithish-gitt/Quizzy/static/css/main.312352a2.css.map",
-    "main.25f3754d.js.map": "/Nithish-gitt/Quizzy/static/js/main.25f3754d.js.map",
-    "453.0886dcda.chunk.js.map": "/Nithish-gitt/Quizzy/static/js/453.0886dcda.chunk.js.map"
+    "main.css": "/Quizzy/static/css/main.312352a2.css",
+    "main.js": "/Quizzy/static/js/main.0bac7266.js",
+    "static/js/453.0886dcda.chunk.js": "/Quizzy/static/js/453.0886dcda.chunk.js",
+    "index.html": "/Quizzy/index.html",
+    "main.312352a2.css.map": "/Quizzy/static/css/main.312352a2.css.map",
+    "main.0bac7266.js.map": "/Quizzy/static/js/main.0bac7266.js.map",
+    "453.0886dcda.chunk.js.map": "/Quizzy/static/js/453.0886dcda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.312352a2.css",
-    "static/js/main.25f3754d.js"
+    "static/js/main.0bac7266.js"
   ]
 }
