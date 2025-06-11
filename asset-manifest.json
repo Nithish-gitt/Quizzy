@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nithish-gitt/Quizzy.git/static/css/main.312352a2.css",
+    "main.js": "/Nithish-gitt/Quizzy.git/static/js/main.e6cb96ab.js",
+    "static/js/453.0886dcda.chunk.js": "/Nithish-gitt/Quizzy.git/static/js/453.0886dcda.chunk.js",
+    "index.html": "/Nithish-gitt/Quizzy.git/index.html",
+    "main.312352a2.css.map": "/Nithish-gitt/Quizzy.git/static/css/main.312352a2.css.map",
+    "main.e6cb96ab.js.map": "/Nithish-gitt/Quizzy.git/static/js/main.e6cb96ab.js.map",
+    "453.0886dcda.chunk.js.map": "/Nithish-gitt/Quizzy.git/static/js/453.0886dcda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.312352a2.css",
+    "static/js/main.e6cb96ab.js"
+  ]
+}
