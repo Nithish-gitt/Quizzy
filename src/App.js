@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import FileUploadValidator from './FIleUploadValidator';
 import CandidateTable from './CandidateTable';
 import QuizPage from './QuizPage';
