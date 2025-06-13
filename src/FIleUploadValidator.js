@@ -106,21 +106,15 @@ const FileUploadValidator = () => {
 
   const handleSubmit = async () => {
   try {
-      const res = await fetch(`${server}/api/upload`, {
-      method: 'POST',
-      credentials: 'include', // 🔐 Required to send cookies/session
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json' // Optional but helps with some CORS setups
-      },
-      body: JSON.stringify({
+      const res = await axios.post(`${server}/api/upload`, {
         username: username,
         questionsText: questionText,
         keyText: keyText,
         Testname: Testname,
         makePublic: makePublic
-      })
-    });
+      }, {
+        withCredentials: true, // 🔐 Required to send cookies/session
+      });
 
 
     const data = await res.json();
