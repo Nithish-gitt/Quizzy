@@ -7,21 +7,21 @@ function ProtectedRoute({ children }) {
   const [auth, setAuth] = useState(null);
 
   useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        const res = await axios.get(`${server}/api/check-auth`, {
-          withCredentials: true, // ✅ Correct option
-        });
+  const checkAuth = async () => {
+    try {
+      const res = await axios.get(`${server}/api/check-auth`, {
+        withCredentials: true,
+      });
 
-        setAuth(res.data?.authenticated ?? false);
-      } catch (err) {
-        console.error('Auth check failed:', err);
-        setAuth(false);
-      }
-    };
+      setAuth(res.data?.authenticated ?? false);
+    } catch (err) {
+      console.error('Auth check failed:', err);
+      setAuth(false);
+    }
+  };
 
-    checkAuth();
-  }, []);
+  checkAuth();
+}, []);
 
   if (auth === null) return <p>Loading...</p>;
 
