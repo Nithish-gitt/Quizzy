@@ -114,7 +114,7 @@ const FileUploadValidator = () => {
         'Accept': 'application/json' // Optional but helps with some CORS setups
       },
       body: JSON.stringify({
-        username: username[0],
+        username: username,
         questionsText: questionText,
         keyText: keyText,
         Testname: Testname,
