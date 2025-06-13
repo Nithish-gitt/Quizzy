@@ -112,8 +112,15 @@ const QuizPage = () => {
       await axios.post(`${server}/api/submit-test`, {
         username: username,
         testname: testname,
-        score: scorePercentage, // Send the calculated percentage
+        score: scorePercentage
+      }, {
+        withCredentials: true, // 🔐 Required to send the session cookie
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json' // Optional but helpful
+        }
       });
+
     } catch (error) {
       console.error('Error submitting test:', error);
       // Handle submission error (e.g., alert user)
