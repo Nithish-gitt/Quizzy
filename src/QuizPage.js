@@ -31,8 +31,7 @@ const QuizPage = () => {
             username: username,
             testname: testname,
             testVisibility: testVisibility,
-          },
-          withCredentials: true,
+          }
         });
 
         // Assuming res.data[0][0] contains the questions and res.data[1][0] contains the keys
@@ -113,13 +112,7 @@ const QuizPage = () => {
         username: username,
         testname: testname,
         score: scorePercentage
-      }, {
-        withCredentials: true, // 🔐 Required to send the session cookie
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json' // Optional but helpful
-        }
-      });
+      },);
 
     } catch (error) {
       console.error('Error submitting test:', error);

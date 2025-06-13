@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import { server } from './variables/variables';
-import axios from 'axios';
 
 const FileUploadValidator = () => {
   const [errors, setErrors] = useState([]);
@@ -113,8 +112,6 @@ const FileUploadValidator = () => {
         keyText: keyText,
         Testname: Testname,
         makePublic: makePublic
-      }, {
-        withCredentials: true, // 🔐 Required to send cookies/session
       });
 
 
