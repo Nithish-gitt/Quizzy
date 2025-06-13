@@ -116,6 +116,7 @@ const FileUploadValidator = () => {
         Testname: Testname,
         makePublic: makePublic
       }),
+      credentials: 'include',
       
     });
 

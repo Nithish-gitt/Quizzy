@@ -107,7 +107,8 @@ const CandidateTable = () => {
           username: username,
           candidateName: '',
           candidateEmail: '',
-          candidateUsername: ''
+          candidateUsername: '',
+          withCredentials: true,
 
       })
     });

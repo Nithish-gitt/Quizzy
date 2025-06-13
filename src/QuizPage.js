@@ -32,6 +32,7 @@ const QuizPage = () => {
             testname: testname,
             testVisibility: testVisibility,
           },
+          withCredentials: true,
         });
 
         // Assuming res.data[0][0] contains the questions and res.data[1][0] contains the keys
