@@ -119,7 +119,7 @@ const FileUploadValidator = () => {
     const data = await res.json();
     if (res.ok) {
       alert('Upload successful! Link ID: ' + data.fileSetId);
-      navigate('/candidates', {state :{ username: username[0] , testname: Testname, testvisibility: makePublic}} );
+      navigate('/candidates', {state :{ username: username , testname: Testname, testvisibility: makePublic}} );
     } else {
       alert('Upload failed: ' + data.error);
     }
