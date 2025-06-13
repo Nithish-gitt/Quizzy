@@ -10,7 +10,7 @@ function ProtectedRoute({ children }) {
     const checkAuth = async () => {
       try {
         const res = await axios.get(`${server}/api/check-auth`, {
-          withCredentials: true, // 🔐 Sends session cookie
+          credentials: true, // 🔐 Sends session cookie
         });
         if (res.data.authenticated) {
           setAuth(true);
