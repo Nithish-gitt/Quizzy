@@ -113,7 +113,14 @@ const FileUploadValidator = () => {
         keyText: keyText,
         Testname: Testname,
         makePublic: makePublic
-      });
+      },
+      {
+        withCredentials: true,
+        headers: {
+                    'Content-Type': 'application/json'
+                 }
+      }
+    );
 
 
     const data = await res.data;
