@@ -121,6 +121,7 @@ const FileUploadValidator = () => {
                  }
       }
     );
+    const data = res.data;
 
 
     alert('Upload successful! Link ID: ' + data.fileSetId);
