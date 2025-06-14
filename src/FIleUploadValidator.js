@@ -154,7 +154,7 @@ const handleInputChange = (e) => {
     <div className="upload-wrapper">
       <h2>📤 Upload Question File</h2>
       <input type="file" accept=".txt" onChange={handleFileUpload} className="file-input" />
-      <a href="https://nithish-gitt.github.io/quizzy/testquestion.txt" download="Question-Template-File.txt">Download Question-Template-File.txt</a>
+      <a href="https://nithish-gitt.github.io/Quizzy/testquestion.txt" download="Question-Template-File.txt">Download Question-Template-File.txt</a>
 
 
       {isLoading && (
@@ -189,7 +189,7 @@ const handleInputChange = (e) => {
 
        <h2>📤 Upload Key File</h2>
       <input type="file" accept=".txt" onChange={handleKeyFileUpload} className="file-input" />
-      <a href="https://nithish-gitt.github.io/quizzy/testkey.txt" download="Key-Template-File.txt">Download Key-Template-File.txt</a>
+      <a href="https://nithish-gitt.github.io/Quizzy/testkey.txt" download="Key-Template-File.txt">Download Key-Template-File.txt</a>
 
       
 
