@@ -123,14 +123,16 @@ const FileUploadValidator = () => {
     );
 
 
-    const data = await res.data;
-    console.log(res);
-    if (res.ok) {
-      alert('Upload successful! Link ID: ' + data.fileSetId);
-      navigate('/candidates', {state :{ username: username , testname: Testname, testvisibility: makePublic}} );
-    } else {
-      alert('Upload failed: ' + data.error);
-    }
+    alert('Upload successful! Link ID: ' + data.fileSetId);
+
+  // ✅ This should now run
+    navigate('/candidates', {
+      state: {
+        username: username,
+        testname: Testname,
+        testvisibility: makePublic
+      }
+    });
   } catch (err) {
     console.error(err);
     alert('Upload error');
