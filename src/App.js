@@ -17,7 +17,7 @@ function App() {
           <ProtectedRoute>
               <FileUploadValidator />
           </ProtectedRoute>} />
-          <Route path='test-results' element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+          <Route path='/test-results' element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/candidates" element={<ProtectedRoute><CandidateTable /></ProtectedRoute>} />
         <Route path="/quiz" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminDashboard />} />

@@ -116,7 +116,8 @@ const FileUploadValidator = () => {
       });
 
 
-    const data = await res.json();
+    const data = await res.data;
+    console.log(res);
     if (res.ok) {
       alert('Upload successful! Link ID: ' + data.fileSetId);
       navigate('/candidates', {state :{ username: username , testname: Testname, testvisibility: makePublic}} );
